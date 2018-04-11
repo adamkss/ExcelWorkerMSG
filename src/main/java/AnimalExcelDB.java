@@ -77,6 +77,7 @@ public class AnimalExcelDB implements AnimalAcces {
                 .collect(Collectors.toList());
     }
 
+    @Override
     public List<Animal> getAnimalsByName(String name) {
         return animals.stream()
                 .filter(animal -> animal.getName().equals(name))
