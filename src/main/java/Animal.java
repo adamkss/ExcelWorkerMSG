@@ -1,14 +1,15 @@
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@Data
-@AllArgsConstructor
+import java.util.Objects;
+
+
 public class Animal {
     private String type;
     private String name;
     private int age;
     private String breed;
-/*
+
     public Animal(String type, String name, int age, String breed) {
 
         this.type = type;
@@ -64,5 +65,5 @@ public class Animal {
     public int hashCode() {
 
         return Objects.hash(type, name, age, breed);
-    }*/
+    }
 }
